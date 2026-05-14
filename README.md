@@ -3,7 +3,7 @@
 A pixel-faithful implementation of the Lendsqr admin console built for the Frontend Engineer assessment. The app covers a split login screen, an authenticated shell with header and sidebar, a summary dashboard, a users directory backed by 500 mock records served through JSON Server, and a full user profile view — all aligned to the shared Figma references.
 
 **Design reference:** [Figma — Lendsqr Frontend Testing](https://www.figma.com/file/ZKILoCoIoy1IESdBpq3GNC/Frontend)  
-**Live preview:** _[add your deployed URL here]_
+**Live preview:** _[https://chisom-lendsqr-fe-test.vercel.app]_
 
 ---
 
@@ -61,14 +61,15 @@ A pixel-faithful implementation of the Lendsqr admin console built for the Front
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/lendsqr-fe-assessment.git
-cd lendsqr-frontend-assessment
+git clone https://github.com/chisom5/lendsqr-fe-test.git
+cd lendsqr-fe-test
 
 # 2. Install dependencies
 npm install
 
 # 3. Copy environment variables
-cp .env.example .env
+cp .env.example 
+``` And generate a new .env file with the content
 ```
 
 ### Running the app
@@ -175,8 +176,7 @@ lendsqr-frontend-assessment/
 │   │       │   │   ├── Table.tsx                   # Users data table
 │   │       │   │   └── TableActionItem.tsx         # Row action dropdown
 │   │       │   └── users-filter-schema.ts          # Zod filter validation
-│   │       ├── types/
-│   │       │   └── user.ts                        # UserListRecord, UserDetailRecord, etc.
+│   │                           
 │   │       └── pages/
 │   │           ├── UsersPage.tsx
 │   │           └── UserDetailsPage.tsx
@@ -196,7 +196,8 @@ lendsqr-frontend-assessment/
 │   │       ├── mulberry32.ts        # Seeded PRNG for stable mock data
 │   │       ├── user-details-storage.ts  # localStorage read/write/merge
 │   │       └── users-api.ts         # fetchUsersList, fetchUserById
-│   │
+│   ├── types/                       # UserListRecord, UserDetailRecord, etc.
+│   │     └── user.ts   
 │   └── util/
 │       └── index.ts                 # Shared pure utilities
 ```
