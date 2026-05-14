@@ -1,6 +1,7 @@
 # Lendsqr Frontend Assessment
 
-A pixel-faithful implementation of the Lendsqr admin console built for the Frontend Engineer assessment. The app covers a split login screen, an authenticated shell with header and sidebar, a summary dashboard, a users directory backed by 500 mock records served through JSON Server, and a full user profile view — all aligned to the shared Figma references.
+This repository implements the Lendsqr admin experience described in the Frontend Engineer assessment. The app covers a split login screen, authenticated shell (header + sidebar), dashboard entry, users directory backed by five hundred mock records, and a detailed user profile view aligned to the shared Figma references.
+
 
 **Design reference:** [Figma — Lendsqr Frontend Testing](https://www.figma.com/file/ZKILoCoIoy1IESdBpq3GNC/Frontend)  
 **Live preview:** _[https://chisom-lendsqr-fe-test.vercel.app]_
@@ -83,6 +84,7 @@ npm run server
 # Terminal 2 — Vite dev server (runs on port 5173)
 npm run dev
 ```
+Terminal 2 is to run the mock data generated from json-generator.com
 
 Visit `http://localhost:5173`
 
