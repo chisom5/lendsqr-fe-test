@@ -1,4 +1,4 @@
-import { UserSummary } from "../../types/user"
+import { UserSummary } from "@/types/user";
 
 interface SummaryCardProps {
     card: UserSummary

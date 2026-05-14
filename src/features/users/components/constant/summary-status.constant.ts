@@ -3,7 +3,7 @@ import UsersIcon from "@/assets/np_users.svg?react";
 import ActiveUsersIcon from "@/assets/np_active_users.svg?react";
 import LoanUsersIcon from "@/assets/np_loan.svg?react";
 import SavingsUsersIcon from "@/assets/np_money.svg?react";
-import { UserSummary } from "../../types/user";
+import { UserSummary } from "@/types/user";
 
 export const summaryCards: UserSummary[] = [
     {

@@ -1,4 +1,4 @@
-import { Guarantor } from "../../types/user";
+import { Guarantor } from "@/types/user";
 import { type UserDetailsTopCardProps } from "./DetailsTopCard";
 
 interface UserDetailsContentCardProps extends Pick<UserDetailsTopCardProps, "activeTab" | "data"> {

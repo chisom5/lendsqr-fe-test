@@ -2,11 +2,11 @@ import { useEffect, useId, useRef, useState, type MouseEvent } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Eye, ListFilter, MoreVertical } from "lucide-react";
-import { UsersListResponse } from "../../types/user";
 import { StatusBadge } from "./StatusBadge";
 import { actionConfig } from "../constant/action-config.constant";
 import { TableActionItem } from "./TableActionItem";
 import { getUserActions } from "../../util";
+import { UsersListResponse } from "@/types/user";
 
 interface TableProps {
     isLoading: boolean,

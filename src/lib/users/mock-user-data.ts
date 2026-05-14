@@ -2,7 +2,7 @@ import type {
   UserDetailRecord,
   UserListRecord,
   UserStatus,
-} from "@/features/users/types/user";
+} from "@/types/user";
 import { mulberry32 } from "@/lib/users/mulberry32";
 
 const ORGS = [

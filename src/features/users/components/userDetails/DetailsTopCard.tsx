@@ -1,7 +1,7 @@
 import { formatNaira } from "@/lib/format/format-naira";
 import { Star, User } from "lucide-react";
 import { tabs } from "../../UserDetailsPage";
-import { UserDetailRecord } from "../../types/user";
+import { UserDetailRecord } from "@/types/user";
 
 export interface UserDetailsTopCardProps {
     activeTab: typeof tabs[number],

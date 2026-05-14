@@ -1,4 +1,4 @@
-import { UserStatus } from "../../types/user";
+import { UserStatus } from "@/types/user";
 
 const styles: Record<
   UserStatus,

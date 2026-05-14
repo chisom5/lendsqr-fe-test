@@ -7,7 +7,6 @@ import {
   usersFilterSchema,
   type UsersFilterFormValues,
 } from "@/features/users/api/users-filter-schema";
-import type { UserStatus } from "@/features/users/types/user";
 import { usePagination } from "@/shared/hooks/usePagination";
 import { Pagination } from "./components/users/Pagination";
 import { UserFilterDropdown } from "./components/users/FilterDropdown";
@@ -15,6 +14,7 @@ import { UserTable } from "./components/users/Table";
 import { useUsersListQuery } from "./api/use-users-list-query";
 import { UserSummaryCard } from "./components/users/SummaryCard";
 import { summaryCards } from "./components/constant/summary-status.constant";
+import { UserStatus } from "@/types/user";
 
 const FILTER_PANEL_W = 320;
 const FILTER_PANEL_GAP = 8;

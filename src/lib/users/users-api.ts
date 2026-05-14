@@ -3,7 +3,7 @@ import type {
   UserListRecord,
   UsersListQuery,
   UsersListResponse,
-} from "@/features/users/types/user";
+} from "@/types/user";
 import { getUserCatalog } from "@/lib/users/mock-user-data";
 
 const MOCK_LATENCY_MS = 450;
@@ -48,11 +48,6 @@ export function filterUsersByQuery(
     if (to && u.dateJoined > to) return false;
     return true;
   });
-}
-
-function parseRemoteUsers(payload: unknown): UserDetailRecord[] | null {
-  if (!Array.isArray(payload)) return null;
-  return payload as UserDetailRecord[];
 }
 
 export async function fetchUsersList(

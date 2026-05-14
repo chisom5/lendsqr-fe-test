@@ -1,5 +1,5 @@
+import { UserStatus } from "@/types/user";
 import { ActionKey } from "../components/constant/action-config.constant";
-import { UserStatus } from "../types/user";
 
 export function getUserActions(status: UserStatus): ActionKey[] {
     switch (status) {
