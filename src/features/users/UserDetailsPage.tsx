@@ -32,6 +32,11 @@ export function UserDetailsPage() {
     );
   }, [activeTab]);
 
+  const actions = useMemo(() => {
+    if (!data?.status) return [];
+    return getUserActions(data.status);
+  }, [data?.status])
+  
 
   if (!userId) {
     return <p className="text-sm text-red-600">Missing user identifier.</p>;
@@ -56,10 +61,7 @@ export function UserDetailsPage() {
     );
   }
 
-  const actions = useMemo(() => {
-    if (!data?.status) return [];
-    return getUserActions(data.status);
-  }, [data?.status])
+ 
   return (
     <div className="space-y-8">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
