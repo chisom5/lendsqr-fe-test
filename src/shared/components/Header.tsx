@@ -20,7 +20,7 @@ export function Header({ onOpenSidebar }: HeaderProps) {
 
         <LendsqrLogo maxW="140px" className="max-lg:order-1"  />
 
-        <div className="order-3 flex w-[400px] md:order-none relative left-[10%]">
+        <div className="order-3 flex w-[400px] md:order-none relative lg:left-[10%]">
           <div className="relative w-full max-w-[400px] md:mx-auto">
             <input
               type="search"
